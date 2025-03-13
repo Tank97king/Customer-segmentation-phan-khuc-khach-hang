@@ -1,3 +1,78 @@
+# Customer Segmentation Using Unsupervised Learning
+
+## 📌 Team 6
+- **Đinh Thế Thành** (Team Leader)
+- Trịnh Hoàng Hà
+- Nguyễn Thanh Sơn
+- Bùi Tuấn Đức
+
+## 📖 Project Introduction
+
+In the digital age, customer segmentation is an effective method that helps businesses better understand their customers. This helps optimize products, services, and marketing strategies, thereby increasing market value.
+
+In this project, we use clustering algorithms in **Unsupervised Machine Learning** to automatically group customers based on shared characteristics. Specifically, the **K-Means** algorithm is applied for customer segmentation.
+
+---
+## 📌 Dataset
+- **Filename**: `newCustomer.csv`
+- **Key Data Columns**:
+  - `CustomerID`: Customer ID (will be removed during preprocessing)
+  - `Gender`: Customer gender
+  - `Age`: Customer age
+  - `Annual Income (k$)`: Annual income in thousand dollars
+  - `Spending Score (1-100)`: Customer spending score (1-100)
+
+---
+## 🔧 Methodology
+
+### 🛠 Data Preprocessing
+- Check and remove null values.
+- Remove the `CustomerID` column as it is not relevant for analysis.
+- Convert categorical columns (`Gender`) into numeric values using **Label Encoding**.
+- Normalize data using **StandardScaler** to bring values to a uniform scale.
+
+### 📊 Data Visualization
+- Use **Seaborn** distribution plots to visualize data.
+- Create a heatmap to show relationships between variables.
+- Apply **t-SNE** visualization to reduce dimensions and enhance interpretability.
+
+### 🔍 Customer Clustering
+- Use the **K-Means** algorithm to cluster customers based on their features.
+- Determine the optimal number of clusters using the **Elbow Method**.
+- Visualize clustering results in **2D and 3D scatter plots**.
+
+---
+## 🚀 How to Run the Project
+### 1️⃣ Install Required Libraries
+Run the following command in your terminal or notebook to install the necessary libraries:
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn
+```
+
+### 2️⃣ Run the Script
+Open and execute the `Customer_Segmentation.py` script using Python:
+```bash
+python Customer_Segmentation.py
+```
+
+Alternatively, if using **Google Colab**, upload the necessary files (`Customer_Segmentation.ipynb`, `newCustomer.csv`) and execute each cell sequentially.
+
+---
+## 📈 Results
+After applying **K-Means**, we identify **5 customer clusters** based on **age, income, and spending score**. The scatter plot clearly visualizes how customers are grouped.
+
+---
+## 🏁 Conclusion
+Customer segmentation using **Unsupervised Machine Learning** helps businesses optimize marketing strategies and product development. The use of **Python** along with powerful libraries such as **Scikit-learn, Pandas, and Seaborn** ensures an efficient analysis and segmentation process.
+
+---
+## 📂 Related Files
+- `Customer_Segmentation.py`: Main source code.
+- `Customer_Segmentation.ipynb`: Jupyter Notebook (for Google Colab users).
+- `newCustomer.csv`: Customer dataset.
+- `README.md`: Project documentation.
+
+🎯 **Run the project and discover customer segments now!** 🚀
 # Phân Khúc Khách Hàng bằng Học Máy Không Giám Sát
 
 ## 📌 Nhóm 6
